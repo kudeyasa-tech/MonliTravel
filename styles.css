@@ -112,16 +112,14 @@ h3 { font-size: 1.25rem; }
 }
 
 .brand {
-    font-family: var(--font-head);
-    font-size: 1.45rem;
-    font-weight: 600;
-    color: var(--white);
-    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
 }
-.brand span { color: var(--sand); }
-.is-scrolled .brand { color: var(--ink); }
-.is-scrolled .brand span { color: var(--accent); }
-
+.brand-logo {
+    height: 42px;
+    width: auto;
+    display: block;
+}
 .main-nav {
     display: flex;
     gap: 2.2rem;
@@ -309,6 +307,7 @@ h3 { font-size: 1.25rem; }
 }
 .services-note p { font-family: var(--font-head); font-size: 1.05rem; font-style: italic; }
 .services-note span { font-size: 0.8rem; color: var(--muted); }
+.services-logo { height: 26px; width: auto; margin-top: 0.35rem; }
 
 /* ---------- About ---------- */
 .about-grid {
@@ -445,8 +444,7 @@ h3 { font-size: 1.25rem; }
     gap: 1.5rem;
     flex-wrap: wrap;
 }
-.footer-brand { color: var(--ink); font-size: 1.2rem; }
-.footer-brand span { color: var(--accent); }
+.footer-brand .brand-logo { height: 34px; }
 .footer-nav { display: flex; gap: 1.6rem; }
 .footer-nav a { font-size: 0.85rem; color: var(--muted); }
 .footer-nav a:hover { color: var(--ink); }
@@ -495,6 +493,7 @@ h3 { font-size: 1.25rem; }
     .menu-open .main-nav { transform: none; z-index: 99; }
     .menu-open .nav-toggle { position: relative; z-index: 100; }
     .main-nav a { color: var(--ink); font-size: 1.2rem; }
+    .brand-logo { height: 34px; max-width: 60vw; object-fit: contain; }
 
     .hero-stats { gap: 1.5rem 2.5rem; }
     .footer-inner { flex-direction: column; text-align: center; }
