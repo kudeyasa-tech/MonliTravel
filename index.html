@@ -3,10 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blank Website</title>
+    <title>MonliTravel — Bespoke Travel Services</title>
+    <meta name="description" content="MonliTravel designs thoughtfully arranged journeys across Europe, Asia, Africa and the Americas. Custom itineraries, guided tours, private transfers and 24/7 concierge.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a href="#top" class="brand">Monli<span>Travel</span></a>
+            <nav class="main-nav" id="mainNav" aria-label="Primary">
+                <a href="#destinations">Destinations</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#contact" class="btn btn-solid btn-small header-cta">Plan Your Trip</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1488646953014-89cb906cdb8d?auto=format&fit=crop&w=2000&q=80')"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="eyebrow light">Bespoke Travel Services</p>
+            <h1>Travel,<br>thoughtfully arranged.</h1>
+            <p class="hero-sub">From first idea to final boarding pass, MonliTravel crafts seamless journeys tailored to you — no crowds, no compromises, no guesswork.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-solid">Start Planning</a>
+                <a href="#destinations" class="btn btn-ghost">Explore Destinations</a>
+            </div>
+            <ul class="hero-stats">
+                <li><strong>10+</strong><span>Years of expertise</span></li>
+                <li><strong>4,800</strong><span>Happy travelers</span></li>
+                <li><strong>60</strong><span>Countries covered</span></li>
+                <li><strong>4.9&#9733;</strong><span>Average rating</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="section" id="destinations">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow">Where to next</p>
+                <h2>Signature destinations</h2>
+                <p class="section-lead">Hand-picked places our specialists know intimately — on the ground, in the season, at their best.</p>
+            </div>
+
+            <div class="filters reveal" id="destFilters" aria-label="Filter destinations by region">
+                <button class="chip is-active" data-filter="all">All</button>
+                <button class="chip" data-filter="europe">Europe</button>
+                <button class="chip" data-filter="asia">Asia</button>
+                <button class="chip" data-filter="africa">Africa</button>
+                <button class="chip" data-filter="americas">Americas</button>
+            </div>
+
+            <div class="card-grid" id="destGrid">
+                <article class="dest-card reveal" data-region="europe">
+                    <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1523906834877-cf4bdf78b0bb?auto=format&fit=crop&w=900&q=80')"></div>
+                    <div class="dest-body">
+                        <div class="dest-top"><h3>Santorini</h3><span class="region-tag">Europe</span></div>
+                        <p>Caldera-view suites, private catamarans and slow afternoons in cliffside villages.</p>
+                        <p class="dest-price">from <strong>$2,400</strong> / person</p>
+                    </div>
+                </article>
+                <article class="dest-card reveal" data-region="europe">
+                    <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1516483638261-f6dbcc0c0951?auto=format&fit=crop&w=900&q=80')"></div>
+                    <div class="dest-body">
+                        <div class="dest-top"><h3>Amalfi Coast</h3><span class="region-tag">Europe</span></div>
+                        <p>Lemon groves, hidden coves and coastal drives with a local expert at the wheel.</p>
+                        <p class="dest-price">from <strong>$2,900</strong> / person</p>
+                    </div>
+                </article>
+                <article class="dest-card reveal" data-region="asia">
+                    <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80')"></div>
+                    <div class="dest-body">
+                        <div class="dest-top"><h3>Bali</h3><span class="region-tag">Asia</span></div>
+                        <p>Rice-terrace retreats, temple mornings and beach clubs chosen to suit your pace.</p>
+                        <p class="dest-price">from <strong>$1,800</strong> / person</p>
+                    </div>
+                </article>
+                <article class="dest-card reveal" data-region="asia">
+                    <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1493976078768-f20d8ac06819?auto=format&fit=crop&w=900&q=80')"></div>
+                    <div class="dest-body">
+                        <div class="dest-top"><h3>Kyoto</h3><span class="region-tag">Asia</span></div>
+                        <p>Private tea ceremonies, moss gardens at dawn and ryokan stays off the guidebook.</p>
+                        <p class="dest-price">from <strong>$3,200</strong> / person</p>
+                    </div>
+                </article>
+                <article class="dest-card reveal" data-region="africa">
+                    <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80')"></div>
+                    <div class="dest-body">
+                        <div class="dest-top"><h3>Serengeti</h3><span class="region-tag">Africa</span></div>
+                        <p>Tented luxury camps, great-migration timing and guides who read the plains like print.</p>
+                        <p class="dest-price">from <strong>$4,500</strong> / person</p>
+                    </div>
+                </article>
+                <article class="dest-card reveal" data-region="americas">
+                    <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1463123081344-d7a550b3f6ca?auto=format&fit=crop&w=900&q=80')"></div>
+                    <div class="dest-body">
+                        <div class="dest-top"><h3>Machu Picchu</h3><span class="region-tag">Americas</span></div>
+                        <p>The Inca Trail at your altitude, sunrise entry permits secured, boutique valley lodges.</p>
+                        <p class="dest-price">from <strong>$2,700</strong> / person</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section-alt" id="services">
+        <div class="container services-grid">
+            <div class="reveal">
+                <p class="eyebrow">What we do</p>
+                <h2>Everything handled.<br>Nothing rushed.</h2>
+                <ol class="service-list">
+                    <li>
+                        <span class="num">01</span>
+                        <div>
+                            <h3>Custom Itinerary Design</h3>
+                            <p>A one-to-one consultation becomes a day-by-day plan built around your pace, budget and interests — refined until it feels exactly right.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="num">02</span>
+                        <div>
+                            <h3>Curated Guided Tours</h3>
+                            <p>Small groups and private guides vetted by our team: historians in Rome, naturalists in the Serengeti, chefs in Bangkok.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="num">03</span>
+                        <div>
+                            <h3>Private Transfers &amp; Logistics</h3>
+                            <p>Airport meet-and-greets, chauffeured routes, luggage handling and visa support — the moving parts you never have to think about.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="num">04</span>
+                        <div>
+                            <h3>24/7 Trip Concierge</h3>
+                            <p>One message away for your entire journey. Table changed, flight delayed, surprise anniversary — we respond in minutes, anywhere.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="services-media reveal">
+                <div class="services-img" style="background-image:url('https://images.unsplash.com/photo-1436491429899-2c1fe0497a45?auto=format&fit=crop&w=1000&q=80')"></div>
+                <div class="services-note">
+                    <p>&ldquo;We plan the trip so completely, all you have to decide is what to pack.&rdquo;</p>
+                    <span>— The MonliTravel team</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div class="about-media reveal">
+                <div class="about-img" style="background-image:url('https://images.unsplash.com/photo-1507525454983-94aa7cf2bd1c?auto=format&fit=crop&w=1200&q=80')"></div>
+            </div>
+            <div class="reveal">
+                <p class="eyebrow">About MonliTravel</p>
+                <h2>A small studio with a big map.</h2>
+                <p class="section-lead">Founded in 2016, MonliTravel began as two travel writers who were tired of one-size-fits-all holidays. Today our team of twelve specialists has personally visited every destination we sell.</p>
+                <ul class="check-list">
+                    <li>Human-designed trips — never templated packages</li>
+                    <li>Fair-pay partners and locally owned stays</li>
+                    <li>Transparent pricing, no hidden service fees</li>
+                    <li>Flexible rebooking on every itinerary</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Talk to a specialist</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section-alt" id="testimonials">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow">Kind words</p>
+                <h2>Travelers who came back different</h2>
+            </div>
+            <div class="quote-grid">
+                <figure class="quote-card reveal">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>Every hotel, every driver, every dinner ran like clockwork. Our honeymoon in Kyoto felt like it was designed by someone who knew us — because they did.</blockquote>
+                    <figcaption><strong>Elena &amp; Marcus R.</strong><span>Kyoto · Autumn 2025</span></figcaption>
+                </figure>
+                <figure class="quote-card reveal">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>A strike shut down Athens airports mid-trip. One message to the concierge and we were re-routed, re-booked and having drinks before the chaos even registered.</blockquote>
+                    <figcaption><strong>David T.</strong><span>Greece · Summer 2025</span></figcaption>
+                </figure>
+                <figure class="quote-card reveal">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>Travelling with three kids usually means compromise. MonliTravel planned around nap times and teen boredom — first holiday where everyone actually relaxed.</blockquote>
+                    <figcaption><strong>Priya S.</strong><span>Bali · Winter 2025</span></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta-banner">
+        <div class="container reveal">
+            <h2>Ready to plan your next journey?</h2>
+            <p>Tell us where you're dreaming of — we'll reply within 24 hours with a first outline, free of charge.</p>
+            <a href="#contact" class="btn btn-dark">Get a free itinerary outline</a>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's start the conversation.</h2>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="destination">Dream destination</label>
+                        <select id="destination" name="destination">
+                            <option value="">Not sure yet — surprise me</option>
+                            <option>Santorini, Greece</option>
+                            <option>Amalfi Coast, Italy</option>
+                            <option>Bali, Indonesia</option>
+                            <option>Kyoto, Japan</option>
+                            <option>Serengeti, Tanzania</option>
+                            <option>Machu Picchu, Peru</option>
+                            <option>Somewhere else entirely</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="message">Tell us about your trip</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Dates, travelers, style, budget..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-solid btn-full">Send request</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+            <aside class="contact-info reveal">
+                <h3>Prefer to reach us directly?</h3>
+                <ul>
+                    <li><span>Email</span><a href="mailto:hello@monlitravel.com">hello@monlitravel.com</a></li>
+                    <li><span>Phone</span><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li><span>Studio</span>128 Harbor Lane, Suite 4<br>San Diego, CA 92101</li>
+                    <li><span>Hours</span>Mon–Fri 9:00–18:00 PT<br>Concierge: 24/7 during your trip</li>
+                </ul>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#top" class="brand footer-brand">Monli<span>Travel</span></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="#destinations">Destinations</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p class="copyright">© 2026 MonliTravel. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
